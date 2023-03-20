@@ -1,0 +1,18 @@
+@import '../../sass/main.scss';
+
+.banner{
+    position: relative;
+    @include flex;
+    border-radius: 25px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/img/Pages/home/Banner.png');
+    background-position: center;
+    background-size: cover;
+    height: 223px;
+    padding: 20px;
+    max-width: 95%;
+    margin: 43px auto;
+    @media screen and (max-width: 550px){
+        margin: 20px auto;
+        height: 120px;
+    }
+}
