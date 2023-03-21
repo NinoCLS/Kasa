@@ -10,7 +10,7 @@ body {
     font-family: "Montserrat", Arial, sans-serif;
 }
 
-/* Contenu */
+/* Inside */
 .App {
     display: flex;
     flex-direction: column;
