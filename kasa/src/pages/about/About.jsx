@@ -13,7 +13,7 @@ const About = () => {
             <main className="about_main">
                 {aboutDatas.map((data) => {
                     return (
-                        <div key={data.id} className="about_main_collapse">
+                        <div key={data.id} className="about_main_dropdown">
                             <Dropdown
                                 style={{ margin: "30px 0" }}
                                 title={data.title}
