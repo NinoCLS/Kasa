@@ -13,7 +13,7 @@ import "./accomodation.scss";
 
 export default function Accomodation() {
     const [imageSlider, setImageSlider] = useState([]);
-    const { idAccomodation } = useParams();
+    const { id } = useParams();
     const [dataCurrentAccomodation, setDataCurrentAccomodation] = useState({});
     const {
         title = "",
@@ -27,11 +27,10 @@ export default function Accomodation() {
     const [firstName, lastName] = name.split(" ");
 
     useEffect(() => {
-        const currentAccomodation =
-            datas.find((data) => data.id === idAccomodation) || {};
+        const currentAccomodation = datas.find((data) => data.id === id) || {};
         setImageSlider(currentAccomodation.pictures || []);
         setDataCurrentAccomodation(currentAccomodation);
-    }, [idAccomodation]);
+    }, [id]);
 
     return (
         <>
