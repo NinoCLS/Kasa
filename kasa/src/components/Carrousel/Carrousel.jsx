@@ -3,7 +3,7 @@ import ArrowRight from "../../assets/img/Components/Caroussel/arrow.png";
 import ArrowLeft from "../../assets/img/Components/Caroussel/arrow2.png";
 import { useState } from "react";
 
-export default function Slider({ imageSlider }) {
+const Slider = ({ imageSlider }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextSlide = () => {
@@ -42,4 +42,6 @@ export default function Slider({ imageSlider }) {
             )}
         </section>
     );
-}
+};
+
+export default Slider;
