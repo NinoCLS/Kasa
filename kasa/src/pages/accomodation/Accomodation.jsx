@@ -11,7 +11,7 @@ import redStar from "../../assets/img/Pages/accomodation/RedStar.png";
 
 import "./accomodation.scss";
 
-export default function Accomodation() {
+const Accomodation = () => {
     const [imageSlider, setImageSlider] = useState([]);
     const { id } = useParams();
     const [dataCurrentAccomodation, setDataCurrentAccomodation] = useState({});
@@ -85,4 +85,6 @@ export default function Accomodation() {
             <Footer />
         </>
     );
-}
+};
+
+export default Accomodation;
