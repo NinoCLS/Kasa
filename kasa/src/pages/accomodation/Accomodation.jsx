@@ -33,14 +33,6 @@ const Accomodation = () => {
         setDataCurrentAccomodation(currentAccomodation);
     }, [id]);
 
-    // if (Object.keys(dataCurrentAccomodation).length === 0) {
-    //     return (
-    //         <>
-    //             <NotFound />
-    //         </>
-    //     );
-    // }
-
     return (
         <>
             {Object.keys(dataCurrentAccomodation).length === 0 ? (
